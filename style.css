@@ -1,0 +1,40 @@
+html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 325px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.results-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+.giphy-img {
+    margin: 1rem;
+}
+
+.error {
+    color: orange;
+}
+
+@media screen and (max-width: 576px) {
+    .gif-search-form {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
